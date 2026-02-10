@@ -29,7 +29,9 @@ func main() {
 		}
 
 		// 如果不匹配，说明是消息正文，直接打印到标准输出
-		fmt.Println(line)
+		if line != "" {
+			fmt.Println(line)
+		}
 	}
 
 	// 检查扫描过程中是否发生了错误
